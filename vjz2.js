@@ -19,13 +19,20 @@ function isUniqChara(password){
             return false;
         }
     }
-    /*for (var j=0; j < myArray.length; j++){
-        console.log(myArray[j])
-    }*/
     return true;
 }
 
-console.log("rezultat: " + isUniqChara(lose))
+function isVeceOd10(password){
+    if (password.length > 10){
+        return password.substring(0, 10);
+    }
+    return password
+}
+
+console.log("rezultat: " + isUniqChara(dobro.toString()))
+
+console.log("rezultat duljine: " + isVeceOd10(dobro))
 return;
+
 jedinstveniZnakovi(dobro);
 jedinstveniZnakovi(lose);
